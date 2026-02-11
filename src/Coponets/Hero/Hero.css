@@ -1,0 +1,383 @@
+#hero {
+    padding-top: 130px;
+    background-color: rgba(18, 21, 23, 1);
+}
+
+.hero-cn {
+    display: flex;
+    align-items: center;
+
+}
+
+.Cof-1 {
+    width: 800px;
+    height: 800px;
+}
+
+
+.cafe h1 {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 80px;
+    line-height: 109.00000000000001%;
+    letter-spacing: -3%;
+    color: #ffffff;
+}
+
+.cafe span {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 80px;
+    line-height: 109.00000000000001%;
+    letter-spacing: -3%;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.cafe span {
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109%;
+    letter-spacing: -0.03em;
+
+    background: linear-gradient(263.46deg,
+            #237249 10%,
+            #35C66B 40%,
+            #237249 70%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    cursor: pointer;
+
+    animation:
+        gradientMove 4s ease-in-out infinite,
+        floatLogo 3s ease-in-out infinite;
+}
+
+.cafe span::after {
+    content: "";
+    inset: 0;
+
+    background: linear-gradient(120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.6) 50%,
+            transparent 100%);
+
+    transform: translateX(-120%);
+    animation: shineMove 2.5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.cafe span:hover {
+    text-shadow: 0 10px 30px rgba(53, 198, 107, 0.6);
+    transform: scale(1.07);
+}
+
+.cafe p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 163%;
+    letter-spacing: -2%;
+    color: rgba(217, 217, 217, 1);
+    padding-bottom: 20px;
+}
+
+.btn {
+    top: 519px;
+    left: 130px;
+    width: 333.38px;
+    height: 74.65px;
+
+
+    border-radius: 82.83px;
+    border: none;
+    outline: none;
+
+    background: linear-gradient(265.23deg,
+            #237249 6.79%,
+            #35C66B 97.2%);
+    background-size: 200% 200%;
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+    opacity: 1;
+
+    box-shadow:
+        0 10px 25px rgba(35, 114, 73, 0.45),
+        0 0 25px rgba(53, 198, 107, 0.6);
+
+    animation:
+        gradientMove 4s ease-in-out infinite,
+        btnFloat 3s ease-in-out infinite;
+
+    overflow: hidden;
+}
+
+.btn::after {
+    content: "";
+    inset: 0;
+
+    background: linear-gradient(120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.55) 50%,
+            transparent 100%);
+
+    transform: translateX(-120%);
+    animation: shineMove 2.8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.btn:hover {
+    transform: scale(1.07);
+    box-shadow:
+        0 15px 40px rgba(53, 198, 107, 0.6),
+        0 0 35px rgba(53, 198, 107, 0.8);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes btnFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes shineMove {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    60% {
+        transform: translateX(120%);
+    }
+
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+.btn-1 {
+    top: 519px;
+    left: 479.74px;
+    width: 167.97px;
+    height: 74.65px;
+    border-radius: 82.83px;
+    background: rgba(18, 21, 23, 1);
+    border: 1.02px solid;
+
+    border-image-source: linear-gradient(146.68deg,
+            #DADADA -17.38%,
+            rgba(218, 218, 218, 0) 91.61%);
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+    opacity: 1;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.6),
+        inset 0 0 20px rgba(255, 255, 255, 0.04);
+
+    animation: btnFloat 3s ease-in-out infinite;
+
+    overflow: hidden;
+}
+
+.btn-1::after {
+    content: "";
+    inset: 0;
+
+    background: linear-gradient(120deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.35) 50%,
+            transparent 100%);
+
+    transform: translateX(-120%);
+    animation: shineMove 3.2s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.btn-1:hover {
+    transform: scale(1.06);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.8),
+        0 0 20px rgba(218, 218, 218, 0.35);
+}
+
+.btn-1:active {
+    transform: scale(0.97);
+}
+
+@keyframes btnFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes shineMove {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    60% {
+        transform: translateX(120%);
+    }
+
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+.btnfx {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fet {
+    padding-top: 30px;
+    padding: 10px;
+    width: 126px;
+    height: 126px;
+    opacity: 1;
+    top: 647.65px;
+    left: 130px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 109.00000000000001%;
+    letter-spacing: -3%;
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+.fet:hover {
+    background: linear-gradient(267.2deg, rgba(35, 114, 73, 0.449) 3.05%, rgba(53, 198, 107, 0.73) 40.73%);
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 3px 2px 1px rgba(128, 128, 128, 0.466);
+}
+
+.fet h2 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    color: rgba(217, 217, 217, 1);
+    line-height: 144%;
+    letter-spacing: -2%;
+
+}
+
+.dv {
+
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.fet span {
+    color: #35C66B;
+}
+
+#cv-1 {
+    padding-bottom: 40px;
+    background-color: rgba(18, 21, 23, 1);
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.vx {
+    justify-content: space-around;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+    align-items: center;
+    width: 1229px;
+    height: 382px;
+    opacity: 1;
+    top: 886px;
+    left: 247px;
+    border-radius: 46px;
+    background: linear-gradient(264.52deg, #FFFFFF 4.95%, #E5E5E5 64.19%, #FBFBFB 88.37%);
+
+}
+
+.card-m {
+    width: 211px;
+    height: 295px;
+    opacity: 1;
+    top: 937px;
+    left: 987px;
+
+}
+
+.card-m h2 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 163%;
+    letter-spacing: -2%;
+    color: rgba(18, 21, 23, 1);
+}
+
+.card-m {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20.13px;
+    line-height: 163%;
+    letter-spacing: -2%;
+    text-align: center;
+    color: rgba(18, 21, 23, 0.9);
+}

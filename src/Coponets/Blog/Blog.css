@@ -1,0 +1,98 @@
+.Insta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-wrapper {
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon {
+    color: rgba(35, 114, 73, 1);
+    font-size: 28px;
+}
+
+#Blog {
+    background-color: rgba(18, 21, 23, 1);
+}
+
+.blog-cn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.blog-tex h1 {
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 80px;
+    line-height: 109.00000000000001%;
+    letter-spacing: -3%;
+    color: rgba(217, 217, 217, 1);
+}
+
+.blog-tex p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 163%;
+    letter-spacing: -2%;
+    color: rgba(217, 217, 217, 1);
+}
+
+.blog-tex span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 109%;
+    letter-spacing: -3%;
+
+
+    background: linear-gradient(263.46deg,
+            #237249 3.14%,
+            #35C66B 87.2%);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+
+@keyframes shimmer {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.vet h1 {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 132%;
+    letter-spacing: 0%;
+    color: rgba(255, 255, 255, 1);
+}

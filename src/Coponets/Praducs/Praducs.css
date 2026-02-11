@@ -1,0 +1,148 @@
+#Fet {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 40px 0;
+    background: rgba(18, 21, 23, 1);
+}
+
+.carousel-container {
+    position: relative;
+    width: 320px;
+    height: 554px;
+    overflow: hidden;
+}
+
+.cvb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 29px;
+    border: 1.5px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.8s ease;
+    border: 1.5px solid rgba(35, 114, 73, 1);
+
+}
+
+.tex-c {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 163%;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.cvb.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+.cvb.inactive {
+    opacity: 0;
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.cvb img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cvb h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 10px 0 5px 0;
+}
+
+.cvb p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.cvb h3 {
+    font-size: 20px;
+    color: #237249;
+    margin: 5px 0 10px 0;
+}
+
+.btn-3 {
+    width: 186px;
+    height: 54.07px;
+    border-radius: 59.72px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: #fff;
+
+    background: linear-gradient(265.23deg, #237249 6.79%, #35C66B 97.2%);
+    background-size: 300% 300%;
+    position: relative;
+    overflow: hidden;
+margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: btn3Gradient 4s ease infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes btn3Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover effekti */
+.btn-3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(53, 198, 107, 0.5);
+}
+
+/* After pseudo-element — glow/shine */
+.btn-3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.2));
+    transform: skewX(-25deg);
+    transition: all 0.5s ease;
+}
+
+.btn-3:hover::after {
+    left: 125%;
+}
+.cvbn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}

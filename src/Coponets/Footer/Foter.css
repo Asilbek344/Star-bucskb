@@ -1,0 +1,57 @@
+#foter{
+    background-color:rgba(18, 21, 23, 1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+.ft-cn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.ft-cn ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.ft-cn ul li a{
+    color: white;
+    font-size: 18px;
+}
+.fer{
+    font-size: 38px;
+    color:rgba(53, 198, 107, 1) ;
+    border: 2px solid rgb(53, 198, 107, 1);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    scroll-padding: 90px;
+}
+.ft-cn ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.ft-cn ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: rgba(53, 198, 107, 1);
+    transition: width 0.3s ease;
+}
+
+.ft-cn ul li a:hover {
+    color: rgba(53, 198, 107, 1);
+}
+
+.ft-cn ul li a:hover::after {
+    width: 100%;
+}
