@@ -146,3 +146,99 @@ margin-left: 50px;
     justify-content: space-around;
 
 }
+
+/* ====== LARGE LAPTOP ====== */
+@media (max-width: 1200px) {
+
+    .carousel-container {
+        width: 300px;
+        height: 520px;
+    }
+
+    .cvb h1 {
+        font-size: 22px;
+    }
+}
+
+
+/* ====== TABLET ====== */
+@media (max-width: 992px) {
+
+    #Fet {
+        justify-content: center;
+    }
+
+    .cvbn {
+        justify-content: center;
+    }
+
+    .carousel-container {
+        width: 280px;
+        height: 500px;
+    }
+
+    .cvb {
+        padding: 15px;
+    }
+
+    .btn-3 {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+/* ====== MOBILE ====== */
+@media (max-width: 768px) {
+
+    .carousel-container {
+        width: 240px;
+        height: 470px;
+    }
+
+    .cvb h1 {
+        font-size: 20px;
+    }
+
+    .cvb p {
+        font-size: 14px;
+    }
+
+    .cvb h3 {
+        font-size: 18px;
+    }
+
+    .btn-3 {
+        width: 150px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
+
+
+/* ====== SMALL MOBILE ====== */
+@media (max-width: 480px) {
+
+    .carousel-container {
+        width: 210px;
+        height: 440px;
+    }
+
+    .cvb h1 {
+        font-size: 18px;
+    }
+
+    .cvb p {
+        font-size: 13px;
+    }
+
+    .cvb h3 {
+        font-size: 16px;
+    }
+
+    .btn-3 {
+        width: 130px;
+        height: 40px;
+        font-size: 13px;
+    }
+}

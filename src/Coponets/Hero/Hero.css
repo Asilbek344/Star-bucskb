@@ -35,7 +35,7 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 
 .cafe span {
     position: relative;
@@ -380,4 +380,144 @@
     letter-spacing: -2%;
     text-align: center;
     color: rgba(18, 21, 23, 0.9);
+}
+/* ====== LARGE LAPTOP ====== */
+@media (max-width: 1200px) {
+
+    .Cof-1 {
+        width: 600px;
+        height: 600px;
+    }
+
+    .cafe h1,
+    .cafe span {
+        font-size: 60px;
+    }
+
+    .vx {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+}
+
+
+/* ====== TABLET ====== */
+@media (max-width: 992px) {
+
+    .hero-cn {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .Cof-1 {
+        width: 500px;
+        height: 500px;
+    }
+
+    .cafe h1,
+    .cafe span {
+        font-size: 48px;
+    }
+
+    .btnfx {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .dv {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .vx {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 40px;
+    }
+}
+
+
+/* ====== MOBILE ====== */
+@media (max-width: 768px) {
+
+    #hero {
+        padding-top: 110px;
+    }
+
+    .Cof-1 {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+
+    .cafe h1,
+    .cafe span {
+        font-size: 36px;
+    }
+
+    .cafe p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 260px;
+        height: 60px;
+    }
+
+    .btn-1 {
+        width: 140px;
+        height: 60px;
+    }
+
+    .fet {
+        width: 110px;
+        height: auto;
+    }
+
+    .vx {
+        border-radius: 30px;
+        padding: 30px 15px;
+    }
+
+    .card-m {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+
+/* ====== SMALL MOBILE ====== */
+@media (max-width: 480px) {
+
+    .cafe h1,
+    .cafe span {
+        font-size: 28px;
+    }
+
+    .cafe p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 220px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+    .btn-1 {
+        width: 120px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .Cof-1 {
+        max-width: 320px;
+    }
+
+    .vx {
+        gap: 25px;
+    }
 }

@@ -185,3 +185,116 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* ====== LARGE LAPTOP ====== */
+@media (max-width: 1200px) {
+
+    .about-x h1,
+    .about-x span,
+    .about-tr h1,
+    .about-tr span {
+        font-size: 60px;
+    }
+
+    .about-x {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ====== TABLET ====== */
+@media (max-width: 992px) {
+
+    .about-cn {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-cn img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .about-x {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-x h1,
+    .about-x span {
+        font-size: 48px;
+    }
+
+    .about-tr {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .about-tr h1,
+    .about-tr span {
+        font-size: 48px;
+    }
+
+    .btn-2 {
+        position: static;
+        margin: 30px auto 0 auto;
+    }
+}
+
+
+/* ====== MOBILE ====== */
+@media (max-width: 768px) {
+
+    .about-x h1,
+    .about-x span,
+    .about-tr h1,
+    .about-tr span {
+        font-size: 36px;
+    }
+
+    .about-x p,
+    .about-tr p {
+        font-size: 16px;
+    }
+
+    .btn-2 {
+        width: 260px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .about-cn img {
+        max-width: 350px;
+    }
+}
+
+
+/* ====== SMALL MOBILE ====== */
+@media (max-width: 480px) {
+
+    .about-x h1,
+    .about-x span,
+    .about-tr h1,
+    .about-tr span {
+        font-size: 28px;
+    }
+
+    .about-x p,
+    .about-tr p {
+        font-size: 14px;
+    }
+
+    .btn-2 {
+        width: 220px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    .about-cn img {
+        max-width: 280px;
+    }
+}
